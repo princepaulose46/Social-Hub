@@ -1,0 +1,295 @@
+<html>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Social Hub</title>
+<head>
+</head>
+<body>
+    <style>
+        
+        body
+{
+ text-align:center;
+ width:100%;
+ margin:0 auto;
+ padding:0px;
+ font-family:"lucida grande",tahoma,verdana,arial,sans-serif;
+ background: linear-gradient(white,lightblue);
+}
+#header_wrapper
+{
+ width:100%;
+ min-width:980px;
+ background:linear-gradient(darkblue,white);
+}
+#header
+{
+ width:980px;
+ margin:0px auto;
+ padding:0px;
+ height:85px;
+}
+#header li
+{
+ list-style-type:none;
+ float:left;
+ text-align:left;
+ color:white;
+}
+#header #sitename
+{
+ margin-top:25px;
+}
+#header #sitename a
+{
+ color:white;
+ text-decoration:none;
+ font-size:30px;
+ font-weight:900;
+}
+#header form
+{
+ margin-top:15px;
+ float:right;
+}
+#header form li
+{
+ font-size:13px;
+ margin-left:15px;
+}
+#header form li a
+{
+ color:rgb(169, 245, 210);
+ text-decoration:none;
+}
+#header form input[type="text"]
+{
+ margin-top:3px;
+ margin-bottom:3px;
+ width:150px;
+ border:1px solid rgb(8, 138, 62);
+ height:25px;
+ padding-left:3px;
+}
+#header form input[type="password"]
+{
+ margin-top:3px;
+ margin-bottom:3px;
+ width:150px;
+ border:1px solid rgb(8, 138, 40);
+ height:25px;
+ padding-left:3px;
+}
+#header form input[type="submit"]
+{
+ height:25px;
+ margin-top:20px;
+ background-color:rgb(8, 138, 51);
+ color:white;
+ border:1px solid rgb(8, 138, 62);
+}
+#wrapper
+{
+ margin:0 auto;
+ padding:0px;
+ text-align:center;
+ width:980px;
+}
+#wrapper div
+{
+ float:left;
+ font-family: helvetica, arial, sans-serif;
+}
+#wrapper #div1
+{
+ margin-top:30px;
+ width:590px;
+ text-align:left;
+}
+#wrapper #div1 p
+{
+ font-size:20px;
+ font-family:arial;
+ font-weight:bold;
+ margin:0px;
+ color:#0e5f26;
+}
+#wrapper #div1 img
+{
+width:60%;
+height:30%;
+}
+#wrapper #div2
+{
+ margin-top:10px;
+ width:390px;
+ text-align:left;
+}
+#wrapper #div2 h1
+{
+ margin:0px;
+ font-size:37px;
+ color:#2E2E2E;
+}
+#wrapper #div2 p
+{
+ font-size:18px;
+ color:#2E2E2E;
+}
+#wrapper #div2 li
+{
+ list-style-type:none;
+ margin-top:10px;
+}
+#wrapper #div2 li #firstname
+{
+ width:49%;
+}
+#wrapper #div2 li #surname
+{
+ margin-left:2%;
+ width:49%;
+}
+#wrapper #div2 li input[type="text"]
+{
+ width:100%;
+ height:40px;
+ border-radius:5px;
+ padding-left:10px;
+ font-size:18px;
+ border:1px solid #BDBDBD;
+}
+#wrapper #div2 li input[type="password"]
+{
+ width:100%;
+ height:40px;
+ border-radius:5px;
+ padding-left:10px;
+ font-size:18px;
+ border:1px solid #BDBDBD;
+}
+#wrapper #div2 li select
+{
+ padding:4px;
+ float:left;
+}
+#wrapper #div2 li a
+{
+ margin-left:10px;
+ width:150px;
+ color:rgb(4, 180, 63);
+ text-decoration:none;
+ font-size:11px;
+ display: inline-block;
+ vertical-align: middle;
+ line-height:15px;
+}
+#wrapper #div2 li a:hover
+{
+ text-decoration:underline;
+}
+#wrapper #div2 li
+{
+ color:#2E2E2E;
+ font-size:18px;
+}
+#wrapper #div2 #terms
+{
+ color:#424242;
+ font-size:11px;
+}
+#wrapper #div2 #terms a
+{
+ display:inline;
+ margin:0px;
+}
+#wrapper #div2 li input[type="submit"]
+{
+ width:205px;
+ height:45px;
+ text-align:center;
+ font-size:19px;
+ margin-top: 10px;
+ margin-bottom: 10px;
+ font-family: 'Freight Sans Bold', helvetica, arial, sans-serif !important;
+ font-weight: bold !important;
+ background: linear-gradient(#67ae55, #578843);
+ background-color: #69a74e;
+ box-shadow: inset 0 1px 1px #a4e388;
+ border-color: #3b6e22 #3b6e22 #2c5115;
+ border: 1px solid;
+ border-radius: 5px;
+ color: #fff;
+ cursor: pointer;
+ display: inline-block;
+ position: relative;
+ text-shadow: 0 1px 2px rgba(0,0,0,.5);
+}
+#wrapper #div2 #create_page
+{
+ color:#424242;
+ font-size:13px;
+ font-weight:bold;
+}
+#wrapper #div2 #create_page a
+{
+ display:inline;
+ margin:0px;
+ font-size:13px;
+}
+#footer_wrapper
+{
+ width:100%;
+ clear:both;
+ float:left;
+ margin-top:160px;
+ min-width:995px;
+ color:rgb(2, 2, 32);
+ background: linear-gradient(white,darkblue); text-align:center;
+}
+    </style>
+    
+    <div id="header_wrapper">
+        <div id="header">
+            <li id="sitename"><a href="#">SocialHub</a></li>
+            <form action="/user/login" method="POST">
+                <li>Email<br><input type="text" name="Email"></li>
+                <li>Password<br><input type="password" name="password"><br></li>
+                <li><input type="submit" name="login" value="Log In"></li>
+            </form>
+        </div>
+    </div>
+    
+    <div id="wrapper">
+        
+        <div id="div1">
+            <p><b>We let you live beyond borders..</b></p>
+                <img src="https://socialhub-thesocialadviser.netdna-ssl.com/wp-content/uploads/2017/03/Social-Hub-Logo-tsa-blue.png">
+            </div>
+            
+            <div id="div2">
+                <h1>Create an account</h1><br/><br/>
+                <form action="\user\register" method="POST">
+                    <li><input type="text" placeholder="Name" id="name" name="name"></li>
+                    <li><input type="text" name="Email" placeholder="Email ID"></li>
+                    
+                    <li><input type="password" name="password" placeholder="New password"></li>
+                    <p>Birthday</p>
+                    <li>
+                        <input type="date" name="bday">
+                    </li>
+                    
+                    <li ><input  type="submit" value="Create an account"></li>
+                </form>
+            </div>
+        </div>
+       
+                <div id="footer_wrapper">
+                    
+                    <div id="footer1">
+                        &copy Prince
+                    </div>
+                    
+                    
+                </div>
+            </body>
+            </html>

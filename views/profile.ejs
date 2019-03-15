@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+        <title>Profile</title>
+</head>
+<style>
+        body{
+            background-color: lightyellow;
+        }
+        h2{
+            text-align: center;
+            color:crimson;
+            font:bolder;
+            margin-top: 2%;
+        }
+        p{
+            text-align: center;
+            color: black;
+        }
+        #head{
+            border: 1px solid blue;
+        }
+        #contentform{
+            position: absolute;
+            text-align: center;
+            left:20%;
+        }
+    </style>
+<body>
+    <div id="head">
+    <h2>Welcome</h2>
+    <% if (currentUser) { %>
+        <p><%= currentUser.name %></p>
+    <p><%= currentUser.email %></p>
+    <p><%= currentUser.bday %></p>
+    <% } %>
+    <a style="padding-left: 90%" href="\user\logout">Log-Out</a>
+    </div>
+    <div id="contentform">
+    <form action="\user\status" method=POST>
+        <br/>
+        Share your thoughts :) <br/><br/>
+        <input type="text" placeholder="Title" name="title"><br/><br/>
+        <textarea rows="7" cols="90" name="posts"></textarea>
+        <input type=submit >
+    </form>
+    </div>
+</body>
+</html>
